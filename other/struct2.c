@@ -39,9 +39,9 @@ int main()
     printf("enter the details:\n");
     
     printf("Name of book: ");
-    scanf("%s", book1.name);  //array name doesnt need &
+    scanf("%[^\n]s", book1.name);  //array name doesnt need &
     printf("Name of Author: ");
-    scanf("%s", book1.author);
+    scanf("%[^\n]s", book1.author);
     printf("Price of book: ");
     scanf("%f", &book1.price); //needs &
     display(book1); //object needs to be sent
